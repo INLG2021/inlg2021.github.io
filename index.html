@@ -13,6 +13,7 @@ d
 
             } 
 
+
 .content {
   max-width: 500px;
   margin: auto;
@@ -37,8 +38,8 @@ d
 }
 
 ul.nav.navbar-nav {
-	display: inline-block;
- 
+	display: block;
+ overflow: hidden;
 	   list-style:none;
     margin:0;
     padding:0;
@@ -120,7 +121,7 @@ display: inline;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky + .content + .wrapper + .main + .slideshow-container{
   padding-top: 60px;
 }
 	
@@ -283,16 +284,25 @@ img {vertical-align: middle;}
   grid-auto-flow: column;
 /*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
 }
+
+.above{
+   z-index:999;
+   position: absolute;
+   left: 60px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  color: black;
+}
+}
 </style>
 </head>
-
 
 
 
 <script>
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("topnav");
+var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -303,6 +313,8 @@ function myFunction() {
   }
 }
 </script>
+	
+
 	<div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
@@ -325,17 +337,12 @@ function myFunction() {
 </div>
 
 
-<!--
-	<div class = "header"> 
-            <h2 style = "color:white; font-size:200%;"> 
-                INLG 2021
-            </h2> 
-</div>
--->
+
+<link rel="icon" type="image/png" href="img/logo.png">
+
 	
-
-
 <div class="slideshow-container">
+	<div class="above"> <img src="img/logo.png" style="width:30%"> <h3>INLG 2021</h3></div>
 
 <div class="mySlides fade">
   <img src="img/slide1.png" style="width:100%">
