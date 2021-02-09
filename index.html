@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+d
 .header { 
                 background-color: darkgrey; 
 	
@@ -18,8 +18,6 @@ body {
   margin: auto;
 }
 	
-
-
 	
 /* Add a black background color to the top navigation */
 .topnav {
@@ -209,8 +207,82 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-	
 
+	
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+	
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+.box{ 
+	
+	 color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	
+} 
+ 
+.red{ 
+	background:#CC4141; 
+	 margin: 10px;
+  padding: 5px;
+} 
+.orage{ 
+	background:#F7941D; 
+		 margin: 10px;
+  padding: 5px;
+} 
+.green{ 
+	background:#8DC63F; 
+		 margin: 10px;
+  padding: 5px;
+} 
+.blue{ 
+	background:#0097DA; 
+		 margin: 10px;
+  padding: 5px;
+} 
+
+.wrapper{
+
+	  display: grid;
+	background: #333333;
+  justify-content: center;
+  align-content: center;
+/*  gap: 4px;*/
+  grid-auto-flow: column;
+/*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
+}
 </style>
 </head>
 
@@ -303,8 +375,27 @@ function showSlides() {
 </script>
 
 
-<div class="content">
+<div class="row">
+  <div class="main">
+  			  	  <div class="wrapper">
+<div class="box red"> <h2> Deadline for<br> Submissions</h2>
+	<p>August</p></div> 
+ <div class="box orage"> <h2> Notification  </h2> <br> <p>August</p></div> 
+<div class="box green"> <h2> Camera Ready </h2> <br> <p>August</p></div> 
+<div class="box blue"> <h2> INLG 2021 </h2> <br> <p>September</p></div> 
+	</div>
+  </div>
+
+	  <div class="side">
+
+
+		  <div class="content">
+			      <h2>Follow us on Twitter</h2>
 <a class="twitter-timeline" href="https://twitter.com/INLG2020?ref_src=twsrc%5Etfw">Tweets by INLG2020</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+  </div>
+	
+</div>
+
 
 
