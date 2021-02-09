@@ -18,8 +18,12 @@ body {
   margin: auto;
 }
 	
+
+
+	
 /* Add a black background color to the top navigation */
 .topnav {
+	    white-space: nowrap; 
   overflow: hidden;
   background-color: #333;
     list-style:none;
@@ -29,33 +33,40 @@ body {
 	    margin-right: auto;    
     margin-left: auto;  
 	width:100%;
-	   position: sticky;
+	   position: static;
    top: 0;
    z-index: 100;
 }
 
 ul.nav.navbar-nav {
 	display: inline-block;
+ 
+	   list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+
 	
-	list-style: none;
-		
+   
 	
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+	display: inline-block;
                
 }
 
 .topnav li{
-    display:inline;
-	width:5%;
+display: inline;
+    *zoom:1;
+	width: 30%
+		
 
 
 }
@@ -122,14 +133,13 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-	width: 100%;
+  text-align: center;
+  background: #8DC63F;
+  color: white;
+  font-size: 30px;
+	
 }
 	
-
-
 .text-block {
   position: absolute;
   top: 10px;
@@ -168,7 +178,7 @@ img {vertical-align: middle;}
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 0%;
-  display: inline-block;
+/*  display: inline-block;*/
   transition: background-color 0.6s ease;
 }
 
@@ -288,7 +298,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 </script>
 
