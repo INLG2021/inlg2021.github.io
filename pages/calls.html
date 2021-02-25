@@ -1,0 +1,289 @@
+<html>
+<head>
+<title> INLG2021 </title> 	
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+d
+.header { 
+                background-color: darkgrey; 
+	
+
+            } 
+
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+.footer {
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#333333;
+   color: white;
+   text-align: center;
+}
+	
+	
+/* Add a black background color to the top navigation */
+.topnav {
+	    white-space: nowrap; 
+  overflow: hidden;
+  background-color: #333;
+    list-style:none;
+    margin:auto;
+    padding:auto;
+    text-align:center;
+	    margin-right: auto;    
+    margin-left: auto;  
+	width:100%;
+	   position: static;
+   top: 0;
+   z-index: 100;
+}
+
+ul.nav.navbar-nav {
+	display: block;
+ overflow: hidden;
+	   list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;  
+	
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	display: inline-block;
+               
+}
+
+.topnav li{
+display: inline;
+    *zoom:1;
+	width: 30%
+		
+
+
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #CC4141 ;
+  color: #FFFFFF;
+}
+	
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #CC4141;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+	
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+
+}
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+letter-spacing: -0.6px;
+word-spacing: 2.2px;
+color: #000000;
+font-weight: 400;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+}
+
+hm{font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+letter-spacing: -0.6px;
+word-spacing: 2.2px;
+color: #FFFFFF;
+font-weight: 400;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;}
+	
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+.box{ 
+	
+	 color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	
+} 
+ 
+.red{ 
+	background:#CC4141; 
+	 margin: 10px;
+  padding: 5px;
+} 
+.orage{ 
+	background:#F7941D; 
+		 margin: 10px;
+  padding: 5px;
+} 
+.green{ 
+	background:#8DC63F; 
+		 margin: 10px;
+  padding: 5px;
+} 
+.blue{ 
+	background:#0097DA; 
+		 margin: 10px;
+  padding: 5px;
+} 
+
+.wrapper{
+
+	  display: grid;
+	background: #333333;
+  justify-content: center;
+  align-content: center;
+/*  gap: 4px;*/
+  grid-auto-flow: column;
+/*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
+}
+
+/
+</style>
+</head>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+<div class="topnav">
+	 <ul class="nav navbar-nav">
+		 <li><a class="active" href="javascript:void(0)">Home</a></li>
+	  <li><a href="pages/calls.html#calls">Calls</a></li> 
+		 <li><a href="pages/programme.html#programme">Programme</a></li> 
+		<li><a href="pages/workshops.html#workshops">Workshops</a></li> 
+		<li><a href="pages/organisation.html#organisation">Organisation</a></li> 
+		<li><a href="pages/registration.html#registration">Registration</a></li> 
+		<li><a href="pages/sponsorship.html#sponsorship">Sponsorship</a></li> 
+	 <li><a href="pages/contact.html#contact">Contact</a></li> 
+</ul>
+</div>
+
+
+<div class="row">
+  <div class="main">
+	  <div class="content">
+	  <br>
+	 <h3>Calls for Papers</h3> <br>
+<p>We invite the submission of long and short papers, as well as system demonstrations, related to all aspects of Natural Language Generation (NLG), including data-to-text, concept-to-text, text-to-text and vision-to-text approaches. Accepted papers will be presented as oral talks or posters.
+</p> <br>
+The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) of the Association for Computational Linguistics (ACL). </div><br> 
+	   			  	  <div class="wrapper">
+<div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>31 May 2021</h4></p></div> 
+ <div class="box orage"> <h2> Notification <br><br> </h2>  <p><h4>12 July 2021</h4></p></div> 
+<div class="box green"> <h2> Camera Ready <br><br></h2>  <p><h4>12 August 2021</h4></p></div> 
+<div class="box blue"> <h2> INLG 2021 <br><br> </h2>  <p><h4>20-24 Sept 2021</h4></p></div> 
+	</div>
+  </div>
+
+
+<div class="footer">
+ <hm> Copyright 2021 | All Rights Reserved SIGGEN <br>
+
+Designed by Miruna Clinciu</hm>
+</div>
+</html>
