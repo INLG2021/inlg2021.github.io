@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-d
+
 .header { 
                 background-color: darkgrey; 
 	
@@ -56,6 +56,13 @@ ul.nav.navbar-nav {
 	
 }
 
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+	h4{
+   margin-bottom: 5px;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   color: #f2f2f2;
@@ -271,14 +278,31 @@ function myFunction() {
 	  <div class="content">
 	  <br>
 	 <h3>Organisation</h3> <br>
-		  <li>Anya Belz (programme committee)</li>
-<li>Miruna Clinciu (webmaster)</li>
-<li>Angela Fan (programme committee)</li>
-<li>David Howcroft (publications)</li>
-<li>Ehud Reiter (programme committee, local arrangements)</li>
-<li>Yaji Sripada (programme committee, local arrangements)</li>
-<li>Emiel van Miltenburg (workshops)</li>
+		  	
+<ul style="list-style-type:none;">
+	<h4>Program Co-Chairs:</h4>
+<li>Anya Belz (University of Brighton)</li>
+<li>Angela Fan (Facebook)</li>
+<li>Ehud Reiter (University of Aberdeen)</li>
+<li>Yaji Sripada (University of Aberdeen)</li>
+ </ul>
+		  
+<ul style="list-style-type:none;">
+<h4>Publications chair:</h4>
+<li>Dave Howcroft (Heriot Watt University)</li>
+ </ul>
+		
+<ul style="list-style-type:none;">
+<h4>Workshop chair:</h4>
+<li>Emiel van Miltenburg (Tilburg University)</li>
+ </ul>
+		
+<ul style="list-style-type:none;">
+<h4>Website:</h4>
+<li>Miruna Clinciu (Heriot-Watt University/University of Edinburgh)</li>
+		   </ul>
 
+		  <br>
 <p>The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) of the Association for Computational Linguistics (ACL).
 </p> <br>
 
