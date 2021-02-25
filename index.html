@@ -218,6 +218,22 @@ img {vertical-align: middle;}
   padding: 20px;
 
 }
+div.textm {
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
+  div.textm {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.textm {
+    font-size: 30px;
+  }
+}
 h1 {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 21px;
@@ -229,8 +245,23 @@ text-decoration: none;
 font-style: italic;
 font-variant: normal;
 text-transform: none;
+  text-align: center;
 }
-
+h6 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+letter-spacing: -0.6px;
+word-spacing: 2.2px;
+color: #000000;
+font-weight: 400;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+  text-align: justify;
+  text-justify: inter-word;
+	padding-left: 0.2;
+}
 hm{font-family: Arial, Helvetica, sans-serif;
 font-size: 14px;
 letter-spacing: -0.6px;
@@ -306,6 +337,8 @@ text-transform: none;}
 }
 
 /
+.content {
+}
 </style>
 </head>
 
@@ -391,10 +424,12 @@ function showSlides() {
 
 <div class="row">
   <div class="main">
-	  <br>
-	 <h1>The 14th International Conference on Natural Language Generation (INLG 2021) organised by the Association for Computational Linguistics Special Interest Group on Natural Language Generation (SIGGEN) <br> Aberdeen, United Kingdom 20 - 24 September 20, 2021. </h1> <br>
+    <div class="textm">
+    <h1>The 14th International Conference on Natural Language Generation (INLG 2021) organised by the Association for Computational Linguistics Special Interest Group on Natural Language Generation (SIGGEN) <br> Aberdeen, United Kingdom 20 - 24 September 20, 2021. </h1>
+    <h6><em>Because of the Covid situation and likely restrictions on travel, INLG-2021 will primarily take place online. All presentations of research work (oral and poster) will be online.  If the Covid situation allows it, we will organise additional events for people who are able to physically travel to Aberdeen; these will focus on interaction and discussion, not presentation of research work, and if possible will include an excursion to a local castle. Details will be announced closer to the time, when the Covid and travel situation is clearer.</em></h6>
+    </div>
   			  	  <div class="wrapper">
-<div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>31 May 2021</h4></p></div> 
+  <div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>31 May 2021</h4></p></div> 
  <div class="box orage"> <h2> Notification <br><br> </h2>  <p><h4>12 July 2021</h4></p></div> 
 <div class="box green"> <h2> Camera Ready <br><br></h2>  <p><h4>12 August 2021</h4></p></div> 
 <div class="box blue"> <h2> INLG 2021 <br><br> </h2>  <p><h4>20-24 Sept 2021</h4></p></div> 
