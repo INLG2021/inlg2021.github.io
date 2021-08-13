@@ -1,346 +1,188 @@
 <html>
+	
 <head>
+<meta name="title" content="INLG 2021">
+<meta name="description" content="The 14th International Conference on Natural Language Generation (INLG 2021) organised by  (SIGGEN)Aberdeen, United Kingdom 20 - 24 September 20, 2021.">
+<meta name="keywords" content="INLG2021, INLG 2021, inlg, inlg 2021, natural language generation, nlg, summarization, generation, text, dialogue, GPT-3, summary, generate, NLP, natural language preprocessing">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="SIGGEN">
+<meta name="google-site-verification" content="gW2lR3TrJx0-ukAnbFW8LdYgCa1WQxsn6grCxNCi_wo" />
+	
+<link rel="stylesheet" href="../assets/navbar.css">
+<link rel="stylesheet" href="../assets/slider.css">
+<link rel="stylesheet" href="../assets/stylecss.css">
+<script src="../assets/responsive.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <title> INLG2021 </title> 	
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.header { 
-                background-color: darkgrey; 
-	
-
-            } 
-
-
-.content {
-  max-width: 1000px;
-  margin: auto;
-}
-.footer {
-   position:fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#333333;
-   color: white;
-   text-align: center;
-}
-	
-	
-/* Add a black background color to the top navigation */
-.topnav {
-	    white-space: nowrap; 
-  overflow: hidden;
-  background-color: #333;
-    list-style:none;
-    margin:auto;
-    padding:auto;
-    text-align:center;
-	    margin-right: auto;    
-    margin-left: auto;  
-	width:100%;
-	   position: static;
-   top: 0;
-   z-index: 100;
-}
-
-ul.nav.navbar-nav {
-	display: block;
- overflow: hidden;
-	   list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;  
-	
-}
-
-li:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-	h4{
-   margin-bottom: 5px;
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	display: inline-block;
-               
-}
-
-.topnav li{
-display: inline;
-    *zoom:1;
-	width: 30%
-		
-
-
-}
-
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #CC4141 ;
-  color: #FFFFFF;
-}
-	
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #CC4141;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-	
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-
-}
-h1 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 21px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;
-}
-
-hm{font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #FFFFFF;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;}
-	
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-
-.box{ 
-	
-	 color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	
-} 
- 
-.red{ 
-	background:#CC4141; 
-	 margin: 10px;
-  padding: 5px;
-} 
-.orage{ 
-	background:#F7941D; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.green{ 
-	background:#8DC63F; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.blue{ 
-	background:#0097DA; 
-		 margin: 10px;
-  padding: 5px;
-} 
-
-.wrapper{
-
-	  display: grid;
-	background: #333333;
-  justify-content: center;
-  align-content: center;
-/*  gap: 4px;*/
-  grid-auto-flow: column;
-/*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
-}
-
-/
-</style>
 </head>
+<body>
 
 
 
-<script>
-window.onscroll = function() {myFunction()};
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/calls.html">Calls</a>
+  <div class="dropdown" >
+	  <a class="dropbtn disabled" href="../pages/programme.html">Programme
+      <i class="fa fa-caret-down"></i>
+		</a>
+    <div class="dropdown-content">
+      <a href="../pages/members.html">Panel Members</a>
+      <a href="../pages/speakers.html">Invited Speakers</a>
+			      <a href="../pages/papers.html">Accepted Papers</a>
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-
-
-
-<div class="topnav">
-	 <ul class="nav navbar-nav">
-		 <li><a class="active" href="../index.html">Home</a></li>
-	  <li><a href="calls.html">Calls</a></li> 
-		 <li><a href="programme.html#programme">Programme</a></li> 
-		<li><a href="workshops.html#workshops">Workshops</a></li> 
- <li><a href="tutorial.html#tutorial">Tutorial</a></li> 
-		 <li><a href="genchal.html#genchal">GenChal 2021</a></li> 
-		<li><a href="organisation.html#organisation">Organisation</a></li> 
-		<li><a href="registration.html#registration">Registration</a></li> 
-		<li><a href="sponsorship.html#sponsorship">Sponsorship</a></li> 
-	 <li><a href="contact.html#contact">Contact</a></li> 
-</ul>
+    </div>
+  </div> 
+   <a href="../pages/workshops.html#workshops">Workshops</a>
+	<a href="../pages/tutorial.html#tutorial">Tutorial</a>
+	<a href="../pages/genchal.html#genchal">GenChal 2021</a>
+	<a href="../pages/organisation.html#organisation" class="active">Organisation</a>
+	<a href="../pages/registration.html#registration">Registration</a>
+	<a href="../pages/sponsorship.html#sponsorship">Sponsorship</a>
+	<a href="../pages/contact.html#contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
 
-<div class="row">
-  <div class="main">
-	  <div class="content">
-	  <br>
-	 <h3>Organisation</h3> <br>
 
-		  
-		  
-<ul style="list-style-type:none;">
-	<h4>Program Co-Chairs:</h4>
-<li>Anya Belz (University of Brighton)</li>
-<li>Angela Fan (Facebook)</li>
-<li>Ehud Reiter (University of Aberdeen)</li>
-<li>Yaji Sripada (University of Aberdeen)</li>
- </ul>
 
-<ul style="list-style-type:none;">
-	<h4>Area Chairs:</h4>
-<li>Joan Byamugisha (IBM South Africa)</li>
-<li>Ondřej Dušek (Charles University)</li>
-<li>Thiago Castro Ferreira (Universidade Federal de Minas Gerais)</li>
-<li>Albert Gatt (University of Malta)</li>
-<li>Dimitra Gkatzia (Edinburgh Napier University)</li>
-<li>Saad Mahamood (Trivago)</li>
-<li>Lara Martin (University of Pennsylvania)</li>
-<li>Shrimai Prabhumoye (Carnegie Mellon)</li>
-<li>Natalie Schluter (University of Copenhagen)</li>
-<li>Samira Shaikh (University of North Carolina Charlotte)</li>
-<li>Sina Zarrieß  (Friedrich Schiller Universität Jena)</li>
-<li>Xingxing Zhang  (Microsoft China)</li>
- </ul>
-		  
-<ul style="list-style-type:none;">
-<h4>Publications chair:</h4>
-<li>Dave Howcroft (Heriot Watt University)</li>
- </ul>
-		
-<ul style="list-style-type:none;">
-<h4>Workshop chair:</h4>
-<li>Emiel van Miltenburg (Tilburg University)</li>
- </ul>
-
-<ul style="list-style-type:none;">
-<h4>Generation Challenges:</h4>
-<li>Samira Shaikh (UNC – Charlotte)</li>
- </ul>
-		  
-<ul style="list-style-type:none;">
-<h4>Website:</h4>
-<li>Miruna Clinciu (Heriot-Watt University/University of Edinburgh)</li>
-		   </ul>
-
-		  <br>
-<p>The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) of the Association for Computational Linguistics (ACL).
-</p> <br>
-
- <div class="wrapper">
-<div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>15 June 2021 <br> 23:59 AOE (UTC-12)</h4></p></div> 
- <div class="box orage"> <h2> Notification <br><br> </h2>  <p><h4>26 July 2021</h4></p></div> 
-<div class="box green"> <h2> Camera Ready <br><br></h2>  <p><h4>15 August 2021</h4></p></div> 
-<div class="box blue"> <h2> INLG 2021 <br><br> </h2>  <p><h4>20-24 Sept 2021</h4></p></div> 
+<div class="container-fluid">
+  <div class="row">
+   <div class="col col-lg-2">
+	   
+		   <div class="alert alert-dark fade show alert-dismissible" role="alert">
+<div claaa="row"><b>Deadline for Submissions</b><br>
+<strike>15 June 2021<br>
+23:59 AOE (UTC-12)</strike></div>
+		   
+<div claaa="row"><b>Notification</b><br>
+<strike>26 July 2021</strike></div> </div>
+		   
+<div class="alert alert-danger" role="alert">
+<div claaa="row"><b>Camera Ready</b><br> 15 August 2021</div>      
+</div>
+	   
+	   <div class="alert alert-success" role="alert">
+<div claaa="row"><b>INLG 2021</b><br>20 - 24 Sept 2021
+</div>      
+</div>
+	   
+	   
+	
 	</div>
-  </div>
+	  <div class="col-sm border"><br>
+		  
+		  
+		  
+	  
+	  
+					  <div class="row">
+							<div class="col"> 
+								<div class="text_introduction" style="text-align: left"><h3><i><br> Organisation
+<br>
+									</i></h3></div></div>
+
+			</div>
+
+				  <hr>
+
+						  <div class="row no-gutters">
+
+			  <div class="col-12 col-sm-6 col-md-auto">
+					
 
 
+				  <div class="text_info" style="text-align: justify;"> <br>
+
+				<h5> 
+			<b>	Program Co-Chairs:</b><br><br>
+Anya Belz (University of Brighton)<br>
+Angela Fan (Facebook)<br>
+Ehud Reiter (University of Aberdeen)<br>
+Yaji Sripada (University of Aberdeen)<br><br>
+					
+					
+<b>Area Chairs:</b><br><br>
+Joan Byamugisha (IBM South Africa)<br>
+Ondřej Dušek (Charles University)<br>
+Thiago Castro Ferreira (Universidade Federal de Minas Gerais)<br>
+Albert Gatt (University of Malta)<br>
+Dimitra Gkatzia (Edinburgh Napier University)<br>
+Saad Mahamood (Trivago)<br>
+Lara Martin (University of Pennsylvania)<br>
+Shrimai Prabhumoye (Carnegie Mellon)<br>
+Natalie Schluter (University of Copenhagen)<br>
+Samira Shaikh (University of North Carolina Charlotte)<br>
+Sina Zarrieß (Friedrich Schiller Universität Jena)<br>
+Xingxing Zhang (Microsoft China)<br><br>
+					
+					
+<b>Publications chair:</b><br>
+Dave Howcroft (Heriot Watt University)<br><br>
+					
+					
+<b>Workshop chair:</b><br>
+Emiel van Miltenburg (Tilburg University)<br><br>
+					
+					
+<b>Generation Challenges:</b><br>
+Samira Shaikh (UNC – Charlotte)<br><br>
+					
+					
+					<b>Website:</b><br>
+Miruna Clinciu (Heriot-Watt University/University of Edinburgh)<br><br>
+
+The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) of the Association for Computational Linguistics (ACL).<br><br>
+					</h5></div>
+				  
+				    <div class="alert alert-info" role="alert" style="text-align: center"> Visit the INLG 2021 <b><a href="pages/registration.html">Registration Webpage</a></b> to Register Now! </div>
+		  <div class="alert alert-light" role="alert"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+  For media inquiries or questions/comments, please contact <a href="inlgmeeting@gmail.com">inlgmeeting@gmail.com</a>. <br>
+		  <i class="fa fa-bullhorn" aria-hidden="true"></i>
+For announcements, follow <a href="https://twitter.com/inlgmeeting">@inlgmeeting</a> on Twitter <i class="fa fa-twitter" aria-hidden="true"></i> and join our mailing list at <a href="http://www.jiscmail.ac.uk/SIGGEN">http://www.jiscmail.ac.uk/SIGGEN</a>.
+ 
+
+		  </div>
+
+							  
+				  
+				  
+							  
+							  
+							  </div>
+					  </div>
+	  
+	  </div>
+
+	  
+	  
+
+							  <div class="col col-lg-2">
+
+					  </div>
+	  
+</div>
+
+
+	
+	
+<div class="row">
 <div class="footer">
  <hm> Copyright 2021 | All Rights Reserved SIGGEN </hm>
 </div>
+	</div>
+	</div>
+</body>
 </html>

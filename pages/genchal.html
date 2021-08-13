@@ -1,358 +1,253 @@
 <html>
+	
 <head>
+<meta name="title" content="INLG 2021">
+<meta name="description" content="The 14th International Conference on Natural Language Generation (INLG 2021) organised by  (SIGGEN)Aberdeen, United Kingdom 20 - 24 September 20, 2021.">
+<meta name="keywords" content="INLG2021, INLG 2021, inlg, inlg 2021, natural language generation, nlg, summarization, generation, text, dialogue, GPT-3, summary, generate, NLP, natural language preprocessing">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="SIGGEN">
+<meta name="google-site-verification" content="gW2lR3TrJx0-ukAnbFW8LdYgCa1WQxsn6grCxNCi_wo" />
+	
+<link rel="stylesheet" href="../assets/navbar.css">
+<link rel="stylesheet" href="../assets/slider.css">
+<link rel="stylesheet" href="../assets/stylecss.css">
+<script src="../assets/responsive.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <title> INLG2021 </title> 	
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.header { 
-                background-color: darkgrey; 
-	
-
-            } 
-
-
-.content {
-  max-width: 1000px;
-  margin: auto;
-}
-.footer {
-   position:fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#333333;
-   color: white;
-   text-align: center;
-}
-	
-	
-/* Add a black background color to the top navigation */
-.topnav {
-	    white-space: nowrap; 
-  overflow: hidden;
-  background-color: #333;
-    list-style:none;
-    margin:auto;
-    padding:auto;
-    text-align:center;
-	    margin-right: auto;    
-    margin-left: auto;  
-	width:100%;
-	   position: static;
-   top: 0;
-   z-index: 100;
-}
-
-ul.nav.navbar-nav {
-	display: block;
- overflow: hidden;
-	   list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;  
-	
-}
-
-li:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-	h4{
-   margin-bottom: 5px;
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	display: inline-block;
-               
-}
-
-.topnav li{
-display: inline;
-    *zoom:1;
-	width: 30%
-		
-
-
-}
-
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #CC4141 ;
-  color: #FFFFFF;
-}
-	
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #CC4141;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-	
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-
-}
-h1 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 21px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;
-}
-
-hm{font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #FFFFFF;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;}
-	
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-
-.box{ 
-	
-	 color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	
-} 
- 
-.red{ 
-	background:#CC4141; 
-	 margin: 10px;
-  padding: 5px;
-} 
-.orage{ 
-	background:#F7941D; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.green{ 
-	background:#8DC63F; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.blue{ 
-	background:#0097DA; 
-		 margin: 10px;
-  padding: 5px;
-} 
-
-.wrapper{
-
-	  display: grid;
-	background: #333333;
-  justify-content: center;
-  align-content: center;
-/*  gap: 4px;*/
-  grid-auto-flow: column;
-/*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
-}
-
-/
-</style>
 </head>
+<body>
 
 
 
-<script>
-window.onscroll = function() {myFunction()};
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/calls.html">Calls</a>
+  <div class="dropdown" >
+	  <a class="dropbtn disabled" href="../pages/programme.html">Programme
+      <i class="fa fa-caret-down"></i>
+		</a>
+    <div class="dropdown-content">
+      <a href="../pages/members.html">Panel Members</a>
+      <a href="../pages/speakers.html">Invited Speakers</a>
+			      <a href="../pages/papers.html">Accepted Papers</a>
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-
-
-
-<div class="topnav">
-	 <ul class="nav navbar-nav">
-		 <li><a class="active" href="../index.html">Home</a></li>
-	  <li><a href="calls.html">Calls</a></li> 
-		 <li><a href="programme.html#programme">Programme</a></li> 
-		<li><a href="workshops.html#workshops">Workshops</a></li> 
- <li><a href="tutorial.html#tutorial">Tutorial</a></li> 
-		 <li><a href="genchal.html#genchal">GenChal 2021</a></li> 
-		<li><a href="organisation.html#organisation">Organisation</a></li> 
-		<li><a href="registration.html#registration">Registration</a></li> 
-		<li><a href="sponsorship.html#sponsorship">Sponsorship</a></li> 
-	 <li><a href="contact.html#contact">Contact</a></li> 
-</ul>
+    </div>
+  </div> 
+   <a href="../pages/workshops.html#workshops">Workshops</a>
+	<a href="../pages/tutorial.html#tutorial">Tutorial</a>
+	<a href="../pages/genchal.html#genchal" class="active">GenChal 2021</a>
+	<a href="../pages/organisation.html#organisation">Organisation</a>
+	<a href="../pages/registration.html#registration">Registration</a>
+	<a href="../pages/sponsorship.html#sponsorship">Sponsorship</a>
+	<a href="../pages/contact.html#contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
 
-<div class="row">
-  <div class="main">
-	  <div class="content">
-</h3> <br>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><strong><span style="font-size: 18px; font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;"><br> <span style="color:inherit;">GenChal</span>@INLG2021</span></strong></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Generation Challenges 2021 Call for Task Proposals</span></span></strong></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">We invite submissions of papers describing ideas for future shared tasks in the general area of language generation (<strong>GENERATION CHALLENGES 2021</strong>) Proposed tasks can be in the area of core NLG, or in other research areas in which language is generated. Examples include, but are not limited to: data-to-text NLG, text-to-text generation (including MT and summarisation), combining core NLG and MT, combining core NLG and text summarisation, NLG quality estimation, NLG evaluation metrics, and/or generating language from heterogeneous data, including image and video. &nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">- - - - - - - - - - - - - - - - - - -</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">GENERATION CHALLENGES 2021</span></span></strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">&nbsp;(To be held in conjunction with INLG 2021, September 20-24, Aberdeen, UK)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">The Generation Challenges are an umbrella event designed to bring together a variety of shared-task efforts that involve the generation of natural language. This year, Generation Challenges will be held during a special session at the 14th International Conference on Natural Language Generation (INLG 2021), in Aberdeen, UK.</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">The session will follow the format of previous <span style="color:inherit;">GenChal</span> results sessions, with presentations of results by the organisers of the generation challenges that are currently running, as well as presentations of proposals for new shared tasks in the Task Proposals Track.</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;">&nbsp;</p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"><a href="https://github.com/ehudreiter/accuracySharedTask ">• Shared Task on Evaluating Accuracy in Generated Texts </a></span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"> Organised by Ehud Reiter and Craig Thomson </span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">https://github.com/ehudreiter/accuracySharedTask </span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;">&nbsp;</p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"><a href="https://reprogen.github.io/">• The ReproGen Shared Task on Reproducibility of Human Evaluations in NLG </a></span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">Organised by Anya Belz, Shubham Agarwal, Anastasia Shimorina and Ehud Reiter </span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">https://reprogen.github.io/</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;">&nbsp;</p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Call for new Shared Task proposals</span></span></strong></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">- - - - - - - - - - - - - - - - - - -</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Submissions should describe possible future tasks in detail, including information regarding organisers, task description, motivating theoretical interest and/or application context, size and state of completion of data to be used, schedule and evaluation plans. Accepted shared tasks will be run in the 2022 iteration of INLG. 
-</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Instructions for Paper Submissions:</span></span></strong></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">- - - - - - - - - - - - - - - - - -</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Submissions in the Task Proposals Track should be no more than 4 (four) pages long excluding citations, and should follow the guidelines and&nbsp;</span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"><a data-auth="NotApplicable" data-linkindex="1" href="https://2021.aclweb.org/downloads/acl-ijcnlp2021-templates.zip" target="_blank"><span style='font-family:"Arial",sans-serif;'><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;">template</span></span></a></span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">&nbsp;files from ACL Author Guidelines (<a data-auth="NotApplicable" data-linkindex="2" href="https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines" target="_blank">https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines</a>) and policies for submission, review and citation, and be anonymised for double blind reviewing. Please use ACL 2021 style files for Word or&nbsp;</span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"><a data-auth="NotApplicable" data-linkindex="3" href="https://www.overleaf.com/latex/templates/instructions-for-acl-ijcnlp-2021-proceedings/mhxffkjdwymb" target="_blank"><span style='font-family:"Arial",sans-serif;'><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;">Latex</span></span></a></span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">.&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; text-align: left; background: white;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Papers should be submitted via softconf (</span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;"><a data-auth="NotApplicable" data-linkindex="4" href="https://www.softconf.com/l/inlg2021/" target="_blank"><span style='font-family:"Arial",sans-serif;'><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;">https://www.softconf.com/l/inlg2021/</span></span></a></span></span><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">). Please make sure you select &quot;Generation Challenge&quot; in the &quot;Submission Type (*)&quot; drop down menu (&quot;Submission Categories&quot; section of the submission page).&quot;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Task Proposal papers should be submitted no later than June 15th, 2021.</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Submissions will be peer-reviewed by the program committee. &nbsp;As reviewing will not be blind, there is no need to anonymise papers. &nbsp;</span></span></span></p>
 
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">This is not intended to be a selective process, since the aim is to discuss new potential shared tasks with INLG delegates. However, the organisers reserve the right to reject proposals which do not fall within the scope of the <span style="color:inherit;">GenChal</span> initiative, or which do not follow guidelines.</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Accepted submissions will be included in the INLG 2021 proceedings.</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><strong><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Dates:</span></span></strong></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">- - - - - - - - - - - - - - - - - - -</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Paper submission: June 15, 2021</span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Notification of acceptance: July 26, 2021</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">Submission of camera-ready papers: August 12, 2021 - 23:59 AOE (UTC-12)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">INLG 2021: &nbsp; 20-24th September 2021</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit;"><span style="font-family: Verdana, sans-serif; color: rgb(50, 49, 48); border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-style: inherit; font-weight: inherit; line-height: inherit;"><span style="font-family: Arial, sans-serif; color: black; border: 1pt none windowtext; padding: 0cm;">All deadlines are 11.59 pm UTC -12h (&quot;anywhere on Earth&quot;)</span></span></span></p>
-<p style="margin: 0cm 0cm 8pt; font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; text-align: left;"><span style="font-size: 18px;">&nbsp;</span></p>
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="col col-lg-2">
+	   
+		   <div class="alert alert-dark fade show alert-dismissible" role="alert">
+<div claaa="row"><b>Deadline for Submissions</b><br>
+<strike>15 June 2021<br>
+23:59 AOE (UTC-12)</strike></div>
+		   
+<div claaa="row"><b>Notification</b><br>
+<strike>26 July 2021</strike></div> </div>
+		   
+<div class="alert alert-danger" role="alert">
+<div claaa="row"><b>Camera Ready</b><br> 15 August 2021</div>      
+</div>
+	   
+	   <div class="alert alert-success" role="alert">
+<div claaa="row"><b>INLG 2021</b><br>20 - 24 Sept 2021
+</div>      
+</div>
+	   
+	   
 	
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-size: 18px; color: black; font-family: Arial, Helvetica, sans-serif;"><strong>Program Committee:</strong></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">- - - - - - - - - - - - - - - - - - -</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Samira Shaikh (University of North Carolina at Charlotte) &nbsp;(Chair)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Chuan-Yi (Ernie) Chang (Saarland University)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Dimitra Gkatzia (Edinburgh Napier University)</span></span></span></p>
-	<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Yvette Graham (Trinity College Dublin)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Yufang Hou (IBM Research Ireland)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Saad Mahmood (Trivago)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 18px;"><span style="color: black;">Simon Mille (Universitat Pompeu Fabra)</span></span></span></p>
-<p style="font-size: 15px; font-family: Calibri, sans-serif; line-height: 1.5; margin: 0cm; background: white; text-align: left;"><span style="font-size: 18px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">&nbsp;</span></p>
-	  
-	   			  	  <div class="wrapper">
-<div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>15 June 2021 <br> 23:59 AOE (UTC-12) /h4></p></div> 
- <div class="box orage"> <h2> Notification <br><br> </h2>  <p><h4>26 July 2021</h4></p></div> 
-<div class="box green"> <h2> Camera Ready <br><br></h2>  <p><h4>12 August 2021</h4></p></div> 
-<div class="box blue"> <h2> INLG 2021 <br><br> </h2>  <p><h4>20-24 Sept 2021</h4></p></div> 
 	</div>
-  </div>
+	  <div class="col-sm border"><br>
+		  
+		  
+		  
+	  
+	  
+					  <div class="row">
+							<div class="col"> 
+								<div class="text_introduction" style="text-align: left"><h3><i><br> GenChal@INLG2021<br> <br>Generation Challenges 2021 Call for Task Proposals
+									</i></h3></div></div>
+
+			</div>
+
+				  <hr>
+
+						  <div class="row no-gutters">
+
+			  <div class="col-12 col-sm-6 col-md-auto">
+					
 
 
+				  <div class="text_info" style="text-align: justify;"> <br>
+
+				<h5> 
+					We invite submissions of papers describing ideas for future shared tasks in the general area of language generation (GENERATION CHALLENGES 2021) Proposed tasks can be in the area of core NLG, or in other research areas in which language is generated. Examples include, but are not limited to: data-to-text NLG, text-to-text generation (including MT and summarisation), combining core NLG and MT, combining core NLG and text summarisation, NLG quality estimation, NLG evaluation metrics, and/or generating language from heterogeneous data, including image and video.  <br>
+
+======================================= <br> <br>
+
+<b>GENERATION CHALLENGES 2021</b> (To be held in conjunction with INLG 2021, September 20-24, Aberdeen, UK)<br><br>
+
+ 
+
+The Generation Challenges are an umbrella event designed to bring together a variety of shared-task efforts that involve the generation of natural language. This year, Generation Challenges will be held during a special session at the 14th International Conference on Natural Language Generation (INLG 2021), in Aberdeen, UK.<br><br>
+
+ 
+
+The session will follow the format of previous GenChal results sessions, with presentations of results by the organisers of the generation challenges that are currently running, as well as presentations of proposals for new shared tasks in the Task Proposals Track.<br><br>
+
+ 
+
+• Shared Task on Evaluating Accuracy in Generated Texts<br>
+
+Organised by Ehud Reiter and Craig Thomson<br>
+
+<a href="https://github.com/ehudreiter/accuracySharedTask">https://github.com/ehudreiter/accuracySharedTask</a> <br><br>
+
+ 
+
+• The ReproGen Shared Task on Reproducibility of Human Evaluations in NLG <br>
+
+Organised by Anya Belz, Shubham Agarwal, Anastasia Shimorina and Ehud Reiter <br>
+
+<a href="https://reprogen.github.io/">https://reprogen.github.io/</a> <br>
+					
+					
+
+======================================= <br><br>
+
+<b>Call for new Shared Task proposals</b><br><br>
+					
+					Submissions should describe possible future tasks in detail, including information regarding organisers, task description, motivating theoretical interest and/or application context, size and state of completion of data to be used, schedule and evaluation plans. Accepted shared tasks will be run in the 2022 iteration of INLG. <br>
+					
+======================================= <br><br>
+
+<b>Instructions for Paper Submissions:</b><br><br>
+
+Submissions in the Task Proposals Track should be no more than 4 (four) pages long excluding citations, and should follow the guidelines and template files from ACL Author Guidelines (<a href="https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines">https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines</a>) and policies for submission, review and citation, and be anonymised for double blind reviewing. Please use ACL 2021 style files for Word or Latex. <br><br>
+
+ 
+
+Papers should be submitted via softconf (<a href="https://www.softconf.com/l/inlg2021/">https://www.softconf.com/l/inlg2021/</a>). Please make sure you select "Generation Challenge" in the "Submission Type (*)" drop down menu ("Submission Categories" section of the submission page)." <br><br>
+
+ 
+
+Task Proposal papers should be submitted no later than June 15th, 2021. <br><br>
+
+ 
+
+Submissions will be peer-reviewed by the program committee.  As reviewing will not be blind, there is no need to anonymise papers.  <br><br>
+
+ 
+
+This is not intended to be a selective process, since the aim is to discuss new potential shared tasks with INLG delegates. However, the organisers reserve the right to reject proposals which do not fall within the scope of the GenChal initiative, or which do not follow guidelines. <br><br>
+
+ 
+
+Accepted submissions will be included in the INLG 2021 proceedings. <br>
+					
+	
+	======================================= <br><br>
+
+					<b>Dates:</b> <br><br>
+
+
+
+Paper submission: June 15, 2021 <br>
+
+Notification of acceptance: July 26, 2021 <br>
+
+Submission of camera-ready papers: August 12, 2021 - 23:59 AOE (UTC-12) <br>
+
+INLG 2021:   20-24th September 2021 <br> <br>
+
+ 
+
+All deadlines are 11.59 pm UTC -12h ("anywhere on Earth") <br>
+
+ 
+======================================= <br><br>
+					
+<b>Program Committee:</b> <br><br>
+
+
+
+
+Samira Shaikh (University of North Carolina at Charlotte)  (Chair) <br>
+
+Chuan-Yi (Ernie) Chang (Saarland University) <br>
+
+Dimitra Gkatzia (Edinburgh Napier University) <br>
+
+Yvette Graham (Trinity College Dublin) <br>
+
+Yufang Hou (IBM Research Ireland) <br>
+
+Saad Mahmood (Trivago) <br>
+
+Simon Mille (Universitat Pompeu Fabra) <br> <br>
+					</h5></div>
+				  
+				    <div class="alert alert-info" role="alert" style="text-align: center"> Visit the INLG 2021 <b><a href="pages/registration.html">Registration Webpage</a></b> to Register Now! </div>
+		  <div class="alert alert-light" role="alert"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+  For media inquiries or questions/comments, please contact <a href="inlgmeeting@gmail.com">inlgmeeting@gmail.com</a>. <br>
+		  <i class="fa fa-bullhorn" aria-hidden="true"></i>
+For announcements, follow <a href="https://twitter.com/inlgmeeting">@inlgmeeting</a> on Twitter <i class="fa fa-twitter" aria-hidden="true"></i> and join our mailing list at <a href="http://www.jiscmail.ac.uk/SIGGEN">http://www.jiscmail.ac.uk/SIGGEN</a>.
+ 
+
+		  </div>
+
+							  
+				  
+				  
+							  
+							  
+							  </div>
+					  </div>
+	  
+	  </div>
+
+	  
+	  
+
+							  <div class="col col-lg-2">
+
+					  </div>
+	  
+</div>
+
+
+	
+	
+<div class="row">
 <div class="footer">
  <hm> Copyright 2021 | All Rights Reserved SIGGEN </hm>
 </div>
+	</div>
+	</div>
+</body>
 </html>

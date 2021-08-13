@@ -1,418 +1,409 @@
 <html>
+	
 <head>
+<meta name="title" content="INLG 2021">
+<meta name="description" content="The 14th International Conference on Natural Language Generation (INLG 2021) organised by  (SIGGEN)Aberdeen, United Kingdom 20 - 24 September 20, 2021.">
+<meta name="keywords" content="INLG2021, INLG 2021, inlg, inlg 2021, natural language generation, nlg, summarization, generation, text, dialogue, GPT-3, summary, generate, NLP, natural language preprocessing">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="SIGGEN">
+<meta name="google-site-verification" content="gW2lR3TrJx0-ukAnbFW8LdYgCa1WQxsn6grCxNCi_wo" />
+	
+<link rel="stylesheet" href="../assets/navbar.css">
+<link rel="stylesheet" href="../assets/slider.css">
+<link rel="stylesheet" href="../assets/stylecss.css">
+<script src="../assets/responsive.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <title> INLG2021 </title> 	
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-d
-.header { 
-                background-color: darkgrey; 
-	
 
-            } 
-
-
-.content {
-  max-width: 1000px;
-  margin: auto;
-}
-.footer {
-   position:fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#333333;
-   color: white;
-   text-align: center;
-}
-	
-	
-/* Add a black background color to the top navigation */
-.topnav {
-	    white-space: nowrap; 
-  overflow: hidden;
-  background-color: #333;
-    list-style:none;
-    margin:auto;
-    padding:auto;
-    text-align:center;
-	    margin-right: auto;    
-    margin-left: auto;  
-	width:100%;
-	   position: static;
-   top: 0;
-   z-index: 100;
-}
-
-ul.nav.navbar-nav {
-	display: block;
- overflow: hidden;
-	   list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;  
-	
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	display: inline-block;
-               
-}
-
-.topnav li{
-display: inline;
-    *zoom:1;
-	width: 30%
-		
-
-
-}
-
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #CC4141 ;
-  color: #FFFFFF;
-}
-	
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #CC4141;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-	
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-
-}
-h1 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 21px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;
-}
-
-hm{font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-letter-spacing: -0.6px;
-word-spacing: 2.2px;
-color: #FFFFFF;
-font-weight: 400;
-text-decoration: none;
-font-style: italic;
-font-variant: normal;
-text-transform: none;}
-	
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-
-.box{ 
-	
-	 color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	
-} 
- 
-.red{ 
-	background:#CC4141; 
-	 margin: 10px;
-  padding: 5px;
-} 
-.orage{ 
-	background:#F7941D; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.green{ 
-	background:#8DC63F; 
-		 margin: 10px;
-  padding: 5px;
-} 
-.blue{ 
-	background:#0097DA; 
-		 margin: 10px;
-  padding: 5px;
-} 
-
-.wrapper{
-
-	  display: grid;
-	background: #333333;
-  justify-content: center;
-  align-content: center;
-/*  gap: 4px;*/
-  grid-auto-flow: column;
-/*  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));*/
-}
-
-/
-</style>
 </head>
+<body>
 
 
 
-<script>
-window.onscroll = function() {myFunction()};
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/calls.html" class="active">Calls</a>
+  <div class="dropdown" >
+	  <a class="dropbtn disabled" href="../pages/programme.html">Programme
+      <i class="fa fa-caret-down"></i>
+		</a>
+    <div class="dropdown-content">
+      <a href="../pages/members.html">Panel Members</a>
+      <a href="../pages/speakers.html">Invited Speakers</a>
+			      <a href="../pages/papers.html">Accepted Papers</a>
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-
-
-
-<div class="topnav">
-	 <ul class="nav navbar-nav">
-		 <li><a class="active" href="../index.html">Home</a></li>
-	  <li><a href="calls.html">Calls</a></li> 
-		 <li><a href="programme.html#programme">Programme</a></li> 
-		<li><a href="workshops.html#workshops">Workshops</a></li> 
- <li><a href="tutorial.html#tutorial">Tutorial</a></li> 
-		 <li><a href="genchal.html#genchal">GenChal 2021</a></li> 
-		<li><a href="organisation.html#organisation">Organisation</a></li> 
-		<li><a href="registration.html#registration">Registration</a></li> 
-		<li><a href="sponsorship.html#sponsorship">Sponsorship</a></li> 
-	 <li><a href="contact.html#contact">Contact</a></li> 
-</ul>
+    </div>
+  </div> 
+   <a href="../pages/workshops.html#workshops">Workshops</a>
+	<a href="../pages/tutorial.html#tutorial">Tutorial</a>
+	<a href="../pages/genchal.html#genchal">GenChal 2021</a>
+	<a href="../pages/organisation.html#organisation">Organisation</a>
+	<a href="../pages/registration.html#registration">Registration</a>
+	<a href="../pages/sponsorship.html#sponsorship">Sponsorship</a>
+	<a href="../pages/contact.html#contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
 
-<div class="row">
-  <div class="main">
-	  <div class="content">
-<br>
-		  <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#212529;background-color:#ffffff;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><h3>Journal Special Issue</h3>&nbsp;</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">We are organising a special issue of a leading NLP journal, which will consist of extended versions of high-quality papers from INLG 2021 as well as papers selected via an open Call for Paper process. Submission instructions coming soon.</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">For more information on the Special Issue on Natural Language Generation, please see this <a href="https://www.journals.elsevier.com/computer-speech-and-language/call-for-papers/the-second-computer-speech-and-language-journal-special-issue-on-natural-language-generation">link ~ "The Second Computer Speech and Language Journal Special Issue on Natural Language Generation"</a></span></p>
-<p><br></p>
-		  
-		  
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p><br></p>
-		  
-		  
-	  <br>
-	 <h3>Calls for Papers</h3>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">INLG 2021 Second Call for Papers</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">14th International Conference on Natural Language Generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Aberdeen, UK, 20-24 September 2021</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Twitter:&nbsp;</span><a href="https://twitter.com/inlgmeeting" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">@inlgmeeting</span></a></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><a href="https://inlg2021.github.io/" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://inlg2021.github.io/</span></a></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Contact: inlgmeeting@gmail.com</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Because of the Covid situation and likely restrictions on travel, the 14th International Conference on Natural Language Generation (INLG 2021) will primarily take place online. &nbsp;In particular all presentations of research work (oral and poster) will be online. &nbsp;If the Covid situation allows it, we will organise additional events for people who are able to physically travel to Aberdeen; these will focus on interaction and discussion, not presentation of research work, and if possible will include an excursion to a local castle. &nbsp;Details will be announced closer to the time, when the Covid and travel situation is clearer.</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">We invite the submission of long and short papers, as well as system demonstrations, related to all aspects of Natural Language Generation (NLG), including data-to-text, concept-to-text, text-to-text and vision-to-text approaches. Accepted papers will be presented as oral talks or posters.</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) (</span><a href="https://aclweb.org/aclwiki/SIGGEN" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://aclweb.org/aclwiki/SIGGEN</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">) of the Association for Computational Linguistics (ACL) (</span><a href="https://aclweb.org/" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://aclweb.org/</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">).</span></p>
-<p dir="ltr" style="line-height:1.2;text-align: justify;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Important dates</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Deadline for submissions: 15 June 2021  &nbsp; 23:59 AOE (UTC-12)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">-&nbsp;</span><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Notification: 26 July 2021</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Camera ready: 15 August 2021</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- INLG 2021: 20-24 Sept 2021</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">All deadlines are Anywhere on Earth (UTC-12)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Topics</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">INLG 2021 solicits papers on any topic related to NLG. General topics of interest include, but are not limited to:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Affect/emotion generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Analysis and detection of automatically generated text</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Applications for people with disabilities</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Cognitive modelling of language production</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Computational Efficiency of NLG models</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Content and text planning</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Corpora and resources for NLG</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Deep learning models for NLG</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Ethical considerations of NLG</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Evaluation of NLG systems</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Explainability, Fairness and Trustworthy of NLG systems</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Generalizability of NLG systems</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Grounded language generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Lexicalisation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Multimedia and multimodality in generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Natural language understanding techniques for NLG</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- NLG and accessibility</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- NLG and speech synthesis</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- NLG in dialogue</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- NLG for embodied agents and robots</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- NLG for real-world applications</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Paraphrasing, summarization and translation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Personalisation and variation in text</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Referring expression generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Storytelling and narrative generation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Surface realisation</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Systems architecture</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Submissions &amp; Format</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Submissions should follow ACL Author Guidelines (</span><a href="https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">) and policies for submission, review and citation, and be anonymised for double blind reviewing. Please use ACL 2021 style files; LaTeX style files and Microsoft Word templates are available at&nbsp;</span><a href="https://2021.aclweb.org/downloads/acl-ijcnlp2021-templates.zip" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://2021.aclweb.org/downloads/acl-ijcnlp2021-templates.zip</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">, and an Overleaf template is available at&nbsp;</span><a href="https://www.overleaf.com/latex/templates/instructions-for-acl-ijcnlp-2021-proceedings/mhxffkjdwymb" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://www.overleaf.com/latex/templates/instructions-for-acl-ijcnlp-2021-proceedings/mhxffkjdwymb</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Papers can be submitted electronically either through the START conference management system (</span><a href="https://www.softconf.com/l/inlg2021" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://www.softconf.com/l/inlg2021</span></a><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">) or through ACL Rolling Review (</span><a href="https://aclrollingreview.org/authors" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://aclrollingreview.org/authors</span></a><span style="font-size:12pt;font-family:Arial;color:#222222;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Three kinds of papers can be submitted:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Long papers are most appropriate for presenting substantial research results and must not exceed eight (8) pages of content, plus unlimited pages of references. The final versions of long papers will be given one additional page of content (up to 9 pages) so that reviewers&rsquo; comments can be taken into account.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Short papers are more appropriate for presenting an ongoing research effort and must not exceed four (4) pages, plus unlimited pages of references. The final versions of short papers will be given one additional page of content (up to 5 pages) so that reviewers&rsquo; comments can be taken into account.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">- Demo papers should be no more than two (2) pages in length, including references, and should describe implemented systems which are of relevance to the NLG community. Authors of demo papers should be willing to present a demo of their system during INLG 2021.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">All papers can be accompanied by supplementary files, which can include appendices, software, and data. &nbsp;Multiple supplementary files should be zipped together into a single zip file.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Authors are strongly encouraged to ensure that their work is reproducible, and advised to look at ACL2021&apos;s reproducibility checklist (</span><a href="https://2021.aclweb.org/calls/reproducibility-checklist/" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://2021.aclweb.org/calls/reproducibility-checklist/</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">). Authors will be asked to fill in a short reproducibility form, and reviewers will also be asked to assess the reproducibility of the work as part of their reviews.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Authors must honour the ethical code set out in the ACL Code of Ethics (</span><a href="https://www.aclweb.org/portal/content/acl-code-ethics" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://www.aclweb.org/portal/content/acl-code-ethics</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">). If your work raises any ethical issues, you should include an explicit discussion of those issues. This will also be taken into account in the review process.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Finally, papers involving any kind of experimental results (human judgments, system outputs, etc) should incorporate a data availability statement into their paper. Authors are asked to indicate whether the data is made publicly available. If the data is not made available, authors should provide a brief explanation why. (E.g. because the data contains proprietary information.)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">All accepted papers will be published in the INLG 2021 proceedings and included in the ACL anthology. A paper accepted for presentation at INLG 2021 must not have been presented at any other meeting with publicly available proceedings. Dual submission to other conferences is permitted, provided that authors clearly indicate this in the &quot;Acknowledgements&quot; section of the paper when submitted. If the paper is accepted at both venues, the authors will need to choose which venue to present at, since they can not present the same paper twice.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 12pt 0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Workshops&nbsp;</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">A separate call for workshop proposals has been released. Refer to&nbsp;</span><a href="https://inlg2021.github.io/pages/workshops.html#workshops" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://inlg2021.github.io/pages/workshops.html#workshops</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;for further details.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Generation Challenges&nbsp;</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">A separate call for Generation Challenges has been released. Refer to&nbsp;</span><a href="https://inlg2021.github.io/pages/genchal.html#genchal" style="text-decoration:none;"><span style="font-size:12pt;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">https://inlg2021.github.io/pages/genchal.html#genchal</span></a><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;for further details.</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Program Co-Chairs:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Anya Belz (University of Brighton)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Angela Fan (Facebook / LORIA)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Ehud Reiter (University of Aberdeen)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Yaji Sripada (University of Aberdeen)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Publications chair:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Dave Howcroft (Heriot-Watt University)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Workshop chair:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Emiel van Miltenburg (Tilburg University)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Generation Challenges chair:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Samira Shaikh (University of North Carolina at Charlotte)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Website:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Miruna Clinciu (Heriot-Watt University)</span></p>
-<p><br></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Area Chairs:</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Joan Byamugisha (IBM South Africa)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Ondřej Du&scaron;ek (Charles University)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thiago Castro Ferreira (Universidade Federal de Minas Gerais)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Albert Gatt (University of Malta)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Dimitra Gkatzia (Edinburgh Napier University)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Saad Mahamood (Trivago)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Lara Martin (University of Pennsylvania)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Shrimai Prabhumoye (Carnegie Mellon)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Natalie Schluter (University of Copenhagen)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Samira Shaikh (University of North Carolina at Charlotte)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Sina Zarrie&szlig; (Friedrich Schiller Universit&auml;t Jena)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Xingxing Zhang (Microsoft China)</span></p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
-<p dir="ltr" style="line-height:1.2;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">=======================================</span></p>
-<p><br></p>
 
-<p><br></p>
-<p><br></p>
-		  
- <div class="wrapper">
-<div class="box red"> <h2> Deadline for<br> Submissions</h2> <p><h4>15 June 2021 <br> 23:59 AOE (UTC-12)</h4></p></div> 
- <div class="box orage"> <h2> Notification <br><br> </h2>  <p><h4>26 July 2021</h4></p></div> 
-<div class="box green"> <h2> Camera Ready <br><br></h2>  <p><h4>15 August 2021</h4></p></div> 
-<div class="box blue"> <h2> INLG 2021 <br><br> </h2>  <p><h4>20-24 Sept 2021</h4></p></div> 
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="col col-lg-2">
+	   
+		   <div class="alert alert-dark fade show alert-dismissible" role="alert">
+<div claaa="row"><b>Deadline for Submissions</b><br>
+<strike>15 June 2021<br>
+23:59 AOE (UTC-12)</strike></div>
+		   
+<div claaa="row"><b>Notification</b><br>
+<strike>26 July 2021</strike></div> </div>
+		   
+<div class="alert alert-danger" role="alert">
+<div claaa="row"><b>Camera Ready</b><br> 15 August 2021</div>      
+</div>
+	   
+	   <div class="alert alert-success" role="alert">
+<div claaa="row"><b>INLG 2021</b><br>20 - 24 Sept 2021
+</div>      
+</div>
+	   
+	   
+	
 	</div>
-  </div>
+	  <div class="col-sm border"><br>
+		  
+		  
+		  
+					  <div class="row">
+							<div class="col-6 col-sm-3"> 
+								<div class="text_introduction"><h3><i><br> Journal Special Issue </i></h3></div></div>
+
+			</div>
+
+				  <hr>
+
+						  <div class="row no-gutters">
+
+			  <div class="col-12 col-sm-6 col-md-auto">
+					<div class="col-6 col-md-4"> <img src="file:///C|/Users/i0n_p/Desktop/inlg2021.github.io-main/img/jurnal" alt=""  class="pull-left" style="width: 50%;  border: 9px solid white;
+			"/> </div>
 
 
+
+				  <div class="text_info" style="text-align: justify;"> <br>
+
+				<h4><em>We are organising a special issue of a leading NLP journal, which will consist of extended versions of high-quality papers from INLG 2021 as well as papers selected via an open Call for Paper process. Submission instructions coming soon. <br><br>
+
+			For more information on the Special Issue on Natural Language Generation, please click on the link below: <br><a href="https://www.journals.elsevier.com/computer-speech-and-language/call-for-papers/the-second-computer-speech-and-language-journal-special-issue-on-natural-language-generation">"The Second Computer Speech and Language Journal Special Issue on Natural Language Generation"</a>
+
+					</em></h4></div></div>
+					  </div>
+	  
+	  
+	  
+					  <div class="row">
+							<div class="col-6 col-sm-3"> 
+								<div class="text_introduction"><h3><i><br> Calls for Papers
+									</i></h3></div></div>
+
+			</div>
+
+				  <hr>
+
+						  <div class="row no-gutters">
+
+			  <div class="col-12 col-sm-6 col-md-auto">
+					
+
+
+				  <div class="text_info" style="text-align: justify;"> <br>
+
+				<h4> Calls for Papers<br>
+INLG 2021 Second Call for Papers<br>
+
+=======================================<br>
+
+14th International Conference on Natural Language Generation<br>
+
+					
+					</h4></div>
+							  
+							    <div class="text_info" style="text-align: justify;">
+
+				<h5> 
+					 
+
+Twitter: <a href="https://twitter.com/inlgmeeting">@inlgmeeting</a> <br>
+
+<a href="https://inlg2021.github.io/">https://inlg2021.github.io/</a> <br>
+
+Contact: <a href="mailto:inlgmeeting@gmail.com">inlgmeeting@gmail.com</a> <br>
+
+======================================= <br>
+
+Because of the Covid situation and likely restrictions on travel, the 14th International Conference on Natural Language Generation (INLG 2021) will primarily take place online.  In particular all presentations of research work (oral and poster) will be online.  If the Covid situation allows it, we will organise additional events for people who are able to physically travel to Aberdeen; these will focus on interaction and discussion, not presentation of research work, and if possible will include an excursion to a local castle.  Details will be announced closer to the time, when the Covid and travel situation is clearer. <br>
+
+======================================= <br>
+
+We invite the submission of long and short papers, as well as system demonstrations, related to all aspects of Natural Language Generation (NLG), including data-to-text, concept-to-text, text-to-text and vision-to-text approaches. Accepted papers will be presented as oral talks or posters. <br>
+
+The event is organised under the auspices of the Special Interest Group on Natural Language Generation (SIGGEN) (<a href="https://aclweb.org/aclwiki/SIGGEN">https://aclweb.org/aclwiki/SIGGEN</a>) of the Association for Computational Linguistics (ACL) (<a href="https://aclweb.org/">https://aclweb.org/</a>). <br>
+
+======================================= <br> <br>
+					
+				
+
+<b>Important dates</b> <br> <br>
+
+- Deadline for submissions: 15 June 2021    23:59 AOE (UTC-12) <br>
+
+- Notification: 26 July 2021 <br>
+
+- Camera ready: 15 August 2021 <br>
+
+- INLG 2021: 20-24 Sept 2021 <br> <br>
+
+ 
+
+All deadlines are Anywhere on Earth (UTC-12) <br>
+					
+					
+ 
+
+======================================= <br> <br>
+
+	<b>Topics</b> <br> <br>
+
+INLG 2021 solicits papers on any topic related to NLG. General topics of interest include, but are not limited to: <br>
+
+- Affect/emotion generation <br>
+
+- Analysis and detection of automatically generated text <br>
+
+- Applications for people with disabilities <br>
+
+- Cognitive modelling of language production <br>
+
+- Computational Efficiency of NLG models <br>
+
+- Content and text planning <br>
+
+- Corpora and resources for NLG <br>
+
+- Deep learning models for NLG <br>
+
+- Ethical considerations of NLG <br>
+
+- Evaluation of NLG systems <br>
+
+- Explainability, Fairness and Trustworthy of NLG systems <br>
+
+- Generalizability of NLG systems <br>
+
+- Grounded language generation <br>
+
+- Lexicalisation <br>
+
+- Multimedia and multimodality in generation <br>
+
+- Natural language understanding techniques for NLG <br>
+
+- NLG and accessibility <br>
+
+- NLG and speech synthesis <br>
+
+- NLG in dialogue <br>
+
+- NLG for embodied agents and robots <br>
+
+- NLG for real-world applications <br>
+
+- Paraphrasing, summarization and translation <br>
+
+- Personalisation and variation in text <br>
+
+- Referring expression generation <br>
+
+- Storytelling and narrative generation <br>
+
+- Surface realisation <br>
+
+- Systems architecture <br>
+
+======================================= <br><br>
+					
+					
+					
+					<b>Submissions & Format </b> <br> <br>
+
+Submissions should follow ACL Author Guidelines (<a href="https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines">https://www.aclweb.org/adminwiki/index.php?title=ACL_Author_Guidelines</a>) and policies for submission, review and citation, and be anonymised for double blind reviewing. Please use ACL 2021 style files; LaTeX style files and Microsoft Word templates are available at <a href="https://2021.aclweb.org/downloads/acl-ijcnlp2021-templates.zip">https://2021.aclweb.org/downloads/acl-ijcnlp2021-templates.zip</a>, and an Overleaf template is available at <a href="https://www.overleaf.com/latex/templates/instructions-for-acl-ijcnlp-2021-proceedings/mhxffkjdwymb">https://www.overleaf.com/latex/templates/instructions-for-acl-ijcnlp-2021-proceedings/mhxffkjdwymb</a>. <br> <br>
+
+Papers can be submitted electronically either through the START conference management system (<a href="https://www.softconf.com/l/inlg2021">https://www.softconf.com/l/inlg2021</a>) or through ACL Rolling Review (<a href="https://aclrollingreview.org/authors">https://aclrollingreview.org/authors</a>) <br><br>
+
+Three kinds of papers can be submitted: <br><br>
+
+- Long papers are most appropriate for presenting substantial research results and must not exceed eight (8) pages of content, plus unlimited pages of references. The final versions of long papers will be given one additional page of content (up to 9 pages) so that reviewers’ comments can be taken into account. <br><br>
+
+- Short papers are more appropriate for presenting an ongoing research effort and must not exceed four (4) pages, plus unlimited pages of references. The final versions of short papers will be given one additional page of content (up to 5 pages) so that reviewers’ comments can be taken into account. <br><br>
+
+- Demo papers should be no more than two (2) pages in length, including references, and should describe implemented systems which are of relevance to the NLG community. Authors of demo papers should be willing to present a demo of their system during INLG 2021. <br><br>
+
+All papers can be accompanied by supplementary files, which can include appendices, software, and data.  Multiple supplementary files should be zipped together into a single zip file. <br><br>
+
+Authors are strongly encouraged to ensure that their work is reproducible, and advised to look at ACL2021's reproducibility checklist (<a href="https://2021.aclweb.org/calls/reproducibility-checklist/">https://2021.aclweb.org/calls/reproducibility-checklist/</a>). Authors will be asked to fill in a short reproducibility form, and reviewers will also be asked to assess the reproducibility of the work as part of their reviews. <br><br>
+
+Authors must honour the ethical code set out in the ACL Code of Ethics (<a href="https://www.aclweb.org/portal/content/acl-code-ethics">https://www.aclweb.org/portal/content/acl-code-ethics</a>). If your work raises any ethical issues, you should include an explicit discussion of those issues. This will also be taken into account in the review process. <br><br>
+
+Finally, papers involving any kind of experimental results (human judgments, system outputs, etc) should incorporate a data availability statement into their paper. Authors are asked to indicate whether the data is made publicly available. If the data is not made available, authors should provide a brief explanation why. (E.g. because the data contains proprietary information.) <br><br>
+
+All accepted papers will be published in the INLG 2021 proceedings and included in the ACL anthology. A paper accepted for presentation at INLG 2021 must not have been presented at any other meeting with publicly available proceedings. Dual submission to other conferences is permitted, provided that authors clearly indicate this in the "Acknowledgements" section of the paper when submitted. If the paper is accepted at both venues, the authors will need to choose which venue to present at, since they can not present the same paper twice. <br>
+					
+					
+
+======================================= <br><br>
+
+ 
+
+<b>Workshops</b> <br><br>
+
+ 
+
+A separate call for workshop proposals has been released. Refer to <a href="https://inlg2021.github.io/pages/workshops.html#workshops">https://inlg2021.github.io/pages/workshops.html#workshops</a> for further details. <br>
+
+ 
+
+======================================= <br><br>
+
+ 
+
+					<b>Generation Challenges </b><br>
+
+A separate call for Generation Challenges has been released. Refer to <a href="https://inlg2021.github.io/pages/genchal.html#genchal">https://inlg2021.github.io/pages/genchal.html#genchal</a> for further details.<br>
+
+ 
+
+=======================================<br><br>
+
+ 
+
+					<b>Program Co-Chairs:</b><br>
+
+Anya Belz (University of Brighton) <br>
+
+Angela Fan (Facebook / LORIA) <br>
+
+Ehud Reiter (University of Aberdeen) <br>
+
+Yaji Sripada (University of Aberdeen) <br><br>
+
+ 
+
+					<b>Publications chair:</b><br>
+
+Dave Howcroft (Heriot-Watt University) <br><br>
+
+ 
+
+					<b>Workshop chair:</b><br>
+
+Emiel van Miltenburg (Tilburg University)<br><br>
+
+ 
+
+					<b>Generation Challenges chair:</b><br>
+
+Samira Shaikh (University of North Carolina at Charlotte)<br><br>
+
+ 
+
+					<b>Website:</b><br>
+
+Miruna Clinciu (Heriot-Watt University)<br><br>
+
+
+
+					<b>Area Chairs:</b><br>
+
+Joan Byamugisha (IBM South Africa)<br>
+
+Ondřej Dušek (Charles University)<br>
+
+Thiago Castro Ferreira (Universidade Federal de Minas Gerais)<br>
+
+Albert Gatt (University of Malta)<br>
+
+Dimitra Gkatzia (Edinburgh Napier University)<br>
+
+Saad Mahamood (Trivago)<br>
+
+Lara Martin (University of Pennsylvania)<br>
+
+Shrimai Prabhumoye (Carnegie Mellon)<br>
+
+Natalie Schluter (University of Copenhagen)<br>
+
+Samira Shaikh (University of North Carolina at Charlotte)<br>
+
+Sina Zarrieß (Friedrich Schiller Universität Jena)<br>
+
+Xingxing Zhang (Microsoft China)<br>
+
+ 
+
+=======================================<br>
+
+
+					
+					</h5></div>
+				  
+				    <div class="alert alert-info" role="alert" style="text-align: center"> Visit the INLG 2021 <b><a href="pages/registration.html">Registration Webpage</a></b> to Register Now! </div>
+		  <div class="alert alert-light" role="alert"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+  For media inquiries or questions/comments, please contact <a href="inlgmeeting@gmail.com">inlgmeeting@gmail.com</a>. <br>
+		  <i class="fa fa-bullhorn" aria-hidden="true"></i>
+For announcements, follow <a href="https://twitter.com/inlgmeeting">@inlgmeeting</a> on Twitter <i class="fa fa-twitter" aria-hidden="true"></i> and join our mailing list at <a href="http://www.jiscmail.ac.uk/SIGGEN">http://www.jiscmail.ac.uk/SIGGEN</a>.
+ 
+
+		  </div>
+
+							  
+				  
+				  
+							  
+							  
+							  </div>
+					  </div>
+	  
+	  </div>
+
+	  
+	  
+
+							  <div class="col col-lg-2">
+
+					  </div>
+	  
+</div>
+
+
+	
+	
+<div class="row">
 <div class="footer">
  <hm> Copyright 2021 | All Rights Reserved SIGGEN </hm>
 </div>
+	</div>
+	</div>
+</body>
 </html>
